@@ -1,17 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  min-height: 120vh;
+  max-height: 130vh;
+  background-color: rgb(187, 13, 50);
+  background-opacity: 88%;
+}
+.header-large {
+  font-size: clamp(36px, 10vw, 60px);
+}
+.header-small {
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.section-title-font-size {
+  font-size: clamp(32px, 10vw, 36px);
+}
+
+.features {
+  min-height: 100vh;
+}
+
+.feature-title-small,
+.time-header-detail,
+.card-section-small {
+  font-size: clamp(16px, 10vw, 20px);
+}
+
+.feature-detail,
+.subscribe-small,
+.screenshot-small,
+.section-detail-small {
+  font-size: clamp(14px, 10vw, 18px);
+}
+
+.quotes {
+  font-size: clamp(20px, 10vw, 28px);
+}
+
+.quotes {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.quotes:before {
+  color: #ff3d65;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+.quotes:after {
+  color: #ff3d65;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.65em;
+}
+
+.background {
+  z-index: -10;
+}
+
+.accordion-content {
+  padding-top: 1.25rem;
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out, padding 0.2s;
+}
+
+.accordion-content[aria-expanded="true"] {
+  padding: 0rem;
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding 0.2s;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
 }
