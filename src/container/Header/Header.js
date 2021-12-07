@@ -31,7 +31,7 @@ function Header({ toggleOpen }) {
             delay={500}
             animateIn="animate__fadeInUp"
           >
-            <p className="header-small px-10 tracking-wide">
+            <p className="header-small max-w-screen-sm px-10 tracking-wide">
               Looking at more diners in your restaurant makes you feel happy?
               You are at the right place. Your passion to serve with our
               expertise to help you grow = EatsEzy.
