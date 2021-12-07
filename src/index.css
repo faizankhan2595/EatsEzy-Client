@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -39,25 +39,22 @@
 }
 
 .quotes {
-  font-size: clamp(20px, 10vw, 28px);
+  font-size: clamp(20px, 5vw, 25px);
 }
 
-.quotes {
-  quotes: "\201C""\201D""\2018""\2019";
-}
 .quotes:before {
   color: #ff3d65;
   content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  vertical-align: -1.3rem;
 }
 .quotes:after {
   color: #ff3d65;
   content: close-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  vertical-align: -0.65em;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  vertical-align: -1.45rem;
 }
 
 .background {
@@ -77,6 +74,72 @@
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding 0.2s;
 }
 
-.slick-dots li.slick-active button:before {
-  color: red;
+.slick-list {
+  padding: 0 20% 0 0 !important;
+}
+
+.underline-effect {
+  position: relative;
+}
+
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline-effect:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.underline-effect.navlink-active::before {
+  width: 100%;
+}
+
+.underline-effect.light-nav::before {
+  background-color: rgb(107, 114, 128);
+}
+
+.underline-effect.light-nav.navlink-active {
+  color: #ef3340;
+}
+
+.underline-effect.light-nav.navlink-active::before {
+  background-color: #ef3340;
+}
+
+.btn-hover {
+  background-size: 300% 100%;
+
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
 }

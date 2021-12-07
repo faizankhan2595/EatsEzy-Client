@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../static/textlogored.svg";
+import { ReactComponent as Logo } from "../static/logo.svg";
 
 export const Footer = () => {
   return (

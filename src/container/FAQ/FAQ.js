@@ -3,7 +3,10 @@ import Accordian from "./Accordian";
 
 function FAQ() {
   return (
-    <div className="question-section max-w-screen-md flex flex-col items-center mx-auto py-10 px-8">
+    <div
+      id="support"
+      className="question-section max-w-screen-md flex flex-col items-center mx-auto py-10 px-8"
+    >
       <div className=" py-6">
         <h1 className="section-title-font-size font-semibold py-3 text-center">
           Frequently Asked Questions

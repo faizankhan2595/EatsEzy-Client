@@ -8,21 +8,22 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 function Work() {
   return (
     <div className="card-section flex flex-col justify-evenly items-center m-10 py-5">
-      <div className="card-section-header max-w-2xl flex flex-col justify-center items-center ">
+      <div className="card-section-header max-w-screen-sm flex flex-col justify-center items-center ">
         <h1 className="section-title-font-size font-semibold py-3 text-center">
           How it Works?
         </h1>
         <div className="section-detail-small text-gray-500 text-center">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo justo. Nullam dictum felis eu pede mollis pretium.
+          We are a made in Singapore for Singapore. We saw the same problems
+          with multiple restaurants and we want to fix it for all.
         </div>
       </div>
-      <div className="card-list my-12 max-w-6xl gap-10 flex flex-col justify-evenly items-center md:flex-row">
+      <div className="card-list my-12 max-w-6xl gap-10 grid grid-cols-1 justify-items-stretch items-stretch md:grid-cols-3">
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
           <Card
             icon={FiDatabase}
             title="Your Data in Cloud"
-            detail="Lorem ipsum dolor sit amet, conseda adipiscing elit. Aenean commodo ligula eget dolor massa."
+            subtitle="Centralised bookings"
+            detail="Get all your bookings in once place, from EatsEzy guest app, walking, website or infact on call bookings. Leverage the power of cloud with the platform."
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -33,7 +34,8 @@ function Work() {
           <Card
             icon={BiSupport}
             title="24/7 Support"
-            detail="Lorem ipsum dolor sit amet, conseda adipiscing elit. Aenean commodo ligula eget dolor massa."
+            subtitle="Local Support"
+            detail="Facing a problem? Give us a call. We are a local company and we will be always there to help our partners."
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -44,7 +46,8 @@ function Work() {
           <Card
             icon={RiPenNibLine}
             title="Exclusive Design"
-            detail="Lorem ipsum dolor sit amet, conseda adipiscing elit. Aenean commodo ligula eget dolor massa."
+            subtitle="Easy to use"
+            detail="The UX has been planned to make it super easy for restaurant partners to easily operate the app and experience the digital transformation of their business."
           />
         </AnimationOnScroll>
       </div>

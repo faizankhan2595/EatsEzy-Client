@@ -2,11 +2,11 @@ import React from "react";
 import { ReactComponent as Logo } from "../../static/logo.svg";
 import { Link } from "react-scroll";
 
-function Nav({ toggleOpen }) {
+function NavDropdown({ toggleOpen }) {
   return (
     <>
-      <div className=" w-full bg-transparent">
-        <div className="h-full max-w-screen-xl p-5 mx-auto md:px-8 md:py-10 md:w-full md:items-center md:justify-around md:flex-row">
+      <div className=" w-full bg-white">
+        <div className="h-full p-5 mx-auto md:px-8 md:py-5 md:w-full md:items-center md:justify-around md:flex-row">
           <div className="flex flex-row">
             <div className="flex flex-row mx-3 flex-grow items-center justify-between lg:justify-start">
               <Link
@@ -17,7 +17,7 @@ function Nav({ toggleOpen }) {
                 <Logo />
               </Link>
               <button
-                className="rounded-lg md:hidden focus:outline-none focus:shadow-outline text-white"
+                className="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
                 onClick={toggleOpen}
               >
                 <svg
@@ -35,62 +35,61 @@ function Nav({ toggleOpen }) {
                 </svg>
               </button>
             </div>
-            <nav className="text-white text-opacity-90 font-medium tracking-wide hidden pb-4 lg:flex-grow md:pb-0 md:flex md:flex-nowrap md:justify-end md:items-center md:flex-row lg:pl-2">
-              <div className="py-2 md:px-5 lg:px-8">
+            <nav className="text-gray-900 text-opacity-90 font-medium tracking-wide flex-grow hidden pb-4 md:pb-0 md:flex md:flex-nowrap md:justify-end md:items-center md:flex-row lg:px-2">
+              <div className="px-8 py-2">
                 <Link
                   to="home"
-                  activeClass="navlink-active"
                   spy={true}
                   smooth={true}
-                  className="cursor-pointer underline-effect"
+                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
                 >
                   Home
                 </Link>
               </div>
-              <div className="py-2 md:px-5 lg:px-8">
+              <div className="px-8 py-2">
                 <Link
                   to="feature"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
                   offset={-87}
-                  className="cursor-pointer underline-effect"
+                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
                 >
                   Features
                 </Link>
               </div>
-              <div className="py-2 md:px-5 lg:px-8">
+              <div className="px-8 py-2">
                 <Link
                   to="screenshot"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
                   offset={-87}
-                  className="cursor-pointer underline-effect"
+                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
                 >
                   Screenshot
                 </Link>
               </div>
-              <div className="py-2 md:px-5 lg:px-8">
+              <div className="px-8 py-2">
                 <Link
                   to="support"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
                   offset={-87}
-                  className="cursor-pointer underline-effect"
+                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
                 >
                   Support
                 </Link>
               </div>
-              <div className="py-2 md:px-5 lg:px-8">
+              <div className="px-8 py-2">
                 <Link
                   to="contact"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
                   offset={-87}
-                  className="cursor-pointer underline-effect"
+                  className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
                 >
                   Contact
                 </Link>
@@ -103,4 +102,4 @@ function Nav({ toggleOpen }) {
   );
 }
 
-export default Nav;
+export default NavDropdown;
