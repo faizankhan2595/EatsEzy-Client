@@ -9,6 +9,9 @@ module.exports = {
   theme: {
     fontFamily: fontFamily,
     extend: {
+      zIndex: {
+        "-10": "-10",
+      },
       colors: {
         "primary-red": "#EF3340",
         "filter-red": "rgb(187,13,50)",

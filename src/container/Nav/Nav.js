@@ -1,21 +1,21 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../static/logo.svg";
-import { Link } from "react-scroll";
+import logo from "../../static/EatsEzy.png";
+import { Link as ScrollLink } from "react-scroll";
 
 function Nav({ toggleOpen }) {
   return (
     <>
       <div className=" w-full bg-transparent">
-        <div className="h-full max-w-screen-xl p-5 mx-auto md:px-8 md:py-10 md:w-full md:items-center md:justify-around md:flex-row">
+        <div className="h-full max-w-screen-xl p-5 mx-auto lg:px-8 md:py-10 md:w-full md:items-center md:justify-around md:flex-row">
           <div className="flex flex-row">
-            <div className="flex flex-row mx-3 flex-grow items-center justify-between lg:justify-start">
-              <Link
+            <div className="flex flex-row m-3 flex-grow items-center justify-between lg:justify-start">
+              <ScrollLink
                 to="header"
-                className=" text-lg font-bold tracking-tighter  transition duration-500
-                    ease-in-out transform tracking-relaxed lg:px-8 "
+                className=" text-lg w-28 font-bold tracking-tighter  transition duration-500
+                    ease-in-out transform tracking-relaxed lg:px-8 lg:w-44"
               >
-                <Logo />
-              </Link>
+                <img src={logo} alt="EatsEzy-logo" />
+              </ScrollLink>
               <button
                 className="rounded-lg md:hidden focus:outline-none focus:shadow-outline text-white"
                 onClick={toggleOpen}
@@ -37,7 +37,7 @@ function Nav({ toggleOpen }) {
             </div>
             <nav className="text-white text-opacity-90 font-medium tracking-wide hidden pb-4 lg:flex-grow md:pb-0 md:flex md:flex-nowrap md:justify-end md:items-center md:flex-row lg:pl-2">
               <div className="py-2 md:px-5 lg:px-8">
-                <Link
+                <ScrollLink
                   to="home"
                   activeClass="navlink-active"
                   spy={true}
@@ -45,55 +45,55 @@ function Nav({ toggleOpen }) {
                   className="cursor-pointer underline-effect"
                 >
                   Home
-                </Link>
+                </ScrollLink>
               </div>
               <div className="py-2 md:px-5 lg:px-8">
-                <Link
+                <ScrollLink
                   to="feature"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
-                  offset={-87}
+                  offset={-80}
                   className="cursor-pointer underline-effect"
                 >
                   Features
-                </Link>
+                </ScrollLink>
               </div>
               <div className="py-2 md:px-5 lg:px-8">
-                <Link
+                <ScrollLink
                   to="screenshot"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
-                  offset={-87}
+                  offset={-80}
                   className="cursor-pointer underline-effect"
                 >
                   Screenshot
-                </Link>
+                </ScrollLink>
               </div>
               <div className="py-2 md:px-5 lg:px-8">
-                <Link
+                <ScrollLink
                   to="support"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
-                  offset={-87}
+                  offset={-80}
                   className="cursor-pointer underline-effect"
                 >
                   Support
-                </Link>
+                </ScrollLink>
               </div>
               <div className="py-2 md:px-5 lg:px-8">
-                <Link
+                <ScrollLink
                   to="contact"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
-                  offset={-87}
+                  offset={-80}
                   className="cursor-pointer underline-effect"
                 >
                   Contact
-                </Link>
+                </ScrollLink>
               </div>
             </nav>
           </div>

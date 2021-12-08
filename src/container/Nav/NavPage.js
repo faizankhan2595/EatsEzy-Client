@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../static/logo.svg";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavPage({ toggleOpen }) {
   return (
@@ -28,7 +28,7 @@ function NavPage({ toggleOpen }) {
       </div>
       <nav className="text-gray-600 font-medium tracking-wide my-8">
         <div className="py-3">
-          <Link
+          <ScrollLink
             to="home"
             activeClass="navlink-active"
             spy={true}
@@ -37,59 +37,59 @@ function NavPage({ toggleOpen }) {
             className="cursor-pointer underline-effect"
           >
             Home
-          </Link>
+          </ScrollLink>
         </div>
         <div className="py-3">
-          <Link
+          <ScrollLink
             to="feature"
             activeClass="navlink-active"
             spy={true}
             smooth={true}
-            offset={-87}
+            offset={-80}
             onClick={toggleOpen}
             className="cursor-pointer underline-effect"
           >
             Features
-          </Link>
+          </ScrollLink>
         </div>
         <div className="py-3">
-          <Link
+          <ScrollLink
             to="screenshot"
             activeClass="navlink-active"
             spy={true}
             smooth={true}
             onClick={toggleOpen}
-            offset={-87}
+            offset={-80}
             className="cursor-pointer underline-effect"
           >
             Screenshot
-          </Link>
+          </ScrollLink>
         </div>
         <div className="py-3">
-          <Link
+          <ScrollLink
             to="support"
             activeClass="navlink-active"
             spy={true}
             smooth={true}
             onClick={toggleOpen}
-            offset={-87}
+            offset={-80}
             className="cursor-pointer underline-effect"
           >
             Support
-          </Link>
+          </ScrollLink>
         </div>
         <div className="py-3">
-          <Link
+          <ScrollLink
             to="contact"
             activeClass="navlink-active"
             spy={true}
             smooth={true}
             onClick={toggleOpen}
-            offset={-87}
+            offset={-80}
             className="cursor-pointer underline-effect"
           >
             Contact
-          </Link>
+          </ScrollLink>
         </div>
       </nav>
     </div>

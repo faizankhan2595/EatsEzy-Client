@@ -21,7 +21,7 @@ function Contact() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="question-section md:max-w-screen-lg mx-auto flex flex-col items-center py-6 mb-16">
+      <div className="question-section md:max-w-screen-lg mx-auto flex flex-col items-center px-10 py-6 mb-16">
         <div className="py-6 mb-6 max-w-screen-sm">
           <h1 className="section-title-font-size font-semibold py-3 text-center">
             Get in Touch

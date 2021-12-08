@@ -4,11 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.highlight-lg {
+  @apply font-medium text-lg text-gray-800;
+}
+.highlight {
+  @apply font-medium text-gray-700;
+}
+
+.highlight-accent {
+  @apply text-primary-red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
-  min-height: 120vh;
   max-height: 130vh;
-  background-color: rgb(187, 13, 50);
-  background-opacity: 88%;
 }
 .header-large {
   font-size: clamp(36px, 10vw, 50px);
@@ -16,13 +28,8 @@
 .header-small {
   font-size: 18px;
 }
-
 .section-title-font-size {
   font-size: clamp(32px, 10vw, 36px);
-}
-
-.features {
-  min-height: 100vh;
 }
 
 .feature-title-small,
@@ -31,11 +38,14 @@
   font-size: clamp(16px, 10vw, 20px);
 }
 
-.feature-detail,
 .subscribe-small,
 .screenshot-small,
 .section-detail-small {
   font-size: clamp(14px, 10vw, 18px);
+}
+
+.feature-detail {
+  font-size: clamp(16px, 1vw, 18px);
 }
 
 .quotes {

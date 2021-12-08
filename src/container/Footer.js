@@ -1,4 +1,6 @@
-import { ReactComponent as Logo } from "../static/logo.svg";
+import logo from "../static/EatsEzy.png";
+import { Link } from "react-router-dom";
+import { PRIVACY } from "../routes.constant";
 
 export const Footer = () => {
   return (
@@ -6,9 +8,9 @@ export const Footer = () => {
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-5">
           <div className="sm:col-span-2">
-            <p>
-              <Logo />
-            </p>
+            <div className="w-40">
+              <img src={logo} alt="EatzEzy-logo" />
+            </div>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-100">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -107,12 +109,12 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to={PRIVACY}
                 className="text-sm text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
               <a

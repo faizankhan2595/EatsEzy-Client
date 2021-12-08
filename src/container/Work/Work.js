@@ -17,7 +17,7 @@ function Work() {
           with multiple restaurants and we want to fix it for all.
         </div>
       </div>
-      <div className="card-list my-12 max-w-6xl gap-10 grid grid-cols-1 justify-items-stretch items-stretch md:grid-cols-3">
+      <div className="card-list my-12 max-w-6xl gap-10 grid grid-cols-1 justify-items-stretch items-stretch lg:grid-cols-3">
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
           <Card
             icon={FiDatabase}
