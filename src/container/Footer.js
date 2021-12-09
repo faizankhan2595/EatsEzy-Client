@@ -13,8 +13,8 @@ export const Footer = () => {
             </div>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-100">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                People will forget what you said, forget what you did, but
+                people will never forget how you made them feel. - Maya Angelou
               </p>
             </div>
           </div>
@@ -36,12 +36,12 @@ export const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-gray-100">Email:</p>
               <a
-                href="mailto:info@lorem.mail"
+                href="mailto:info@eatsezy.com"
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors duration-300 text-gray-100 hover:text-card-red"
               >
-                info@lorem.mail
+                info@eatsezy.com
               </a>
             </div>
             <div className="flex">
@@ -54,7 +54,7 @@ export const Footer = () => {
                 title="Our address"
                 className="transition-colors duration-300 text-gray-100 hover:text-card-red"
               >
-                312 Lovely Street, NY
+                16 Bussorah St Singapore 199437
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ export const Footer = () => {
             <div className="flex items-center mt-1 space-x-3">
               <a
                 href="/"
-                className="text-gray-100 transition-colors duration-300 "
+                className="text-gray-100 transition-colors duration-300 hover:text-card-red"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                   <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
@@ -89,15 +89,11 @@ export const Footer = () => {
                 </svg>
               </a>
             </div>
-            <p className="mt-4 text-sm text-gray-100">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-              spare ribs salami.
-            </p>
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
           <p className="text-sm text-gray-100">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © Copyrights - Capitol Tech Pte. Ltd. , Singapore
           </p>
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>

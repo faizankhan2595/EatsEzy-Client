@@ -61,14 +61,14 @@ function Nav({ toggleOpen }) {
               </div>
               <div className="py-2 md:px-5 lg:px-8">
                 <ScrollLink
-                  to="screenshot"
+                  to="review"
                   activeClass="navlink-active"
                   spy={true}
                   smooth={true}
                   offset={-80}
                   className="cursor-pointer underline-effect"
                 >
-                  Screenshot
+                  Reviews
                 </ScrollLink>
               </div>
               <div className="py-2 md:px-5 lg:px-8">

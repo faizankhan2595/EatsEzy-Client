@@ -77,7 +77,7 @@ function Review() {
         <div className="quotes text-center text-gray-500 md:mx-10 font-medium">
           {currentReview.review}
         </div>
-        <div className="mt-6 max-w-min mx-auto block">
+        <div className="mt-6 block max-w-min">
           <Slider {...settings} ref={slider}>
             {reviews.map((review, index) => (
               <div key={index} className="my-6 px-3">

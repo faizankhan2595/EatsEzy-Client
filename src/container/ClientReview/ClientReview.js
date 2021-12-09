@@ -1,13 +1,10 @@
 import React from "react";
-import Review from "./Review";
+// import Review from "./Review";
 
 function ClientReview() {
   return (
-    <div
-      id="review"
-      className="review-section flex flex-col justify-evenly items-center mx-10 mb-10 mt-5 py-5"
-    >
-      <div className="card-section-header max-w-xl flex flex-col justify-center items-center ">
+    <div id="review" className="review-section mx-10 mb-10 mt-5 py-5">
+      <div className="card-section-header max-w-screen-sm mx-auto flex flex-col justify-center items-center ">
         <h1 className="section-title-font-size font-semibold py-3 text-center">
           Client Review
         </h1>
@@ -16,9 +13,9 @@ function ClientReview() {
           commodo justo. Nullam dictum felis eu pede mollis pretium.
         </div>
       </div>
-      <div className="mt-12 w-full">
+      {/* <div className="mt-12 w-full">
         <Review />
-      </div>
+      </div> */}
     </div>
   );
 }

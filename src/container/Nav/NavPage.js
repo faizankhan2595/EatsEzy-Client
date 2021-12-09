@@ -1,8 +1,11 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../static/logo.svg";
 import { Link as ScrollLink } from "react-scroll";
+import { useLocation, Link } from "react-router-dom";
+import { HOME } from "./../../routes.constant";
 
 function NavPage({ toggleOpen }) {
+  const location = useLocation();
   return (
     <div className="w-full px-8 py-5">
       <div className="flex flex-row justify-between">
@@ -27,71 +30,46 @@ function NavPage({ toggleOpen }) {
         </button>
       </div>
       <nav className="text-gray-600 font-medium tracking-wide my-8">
-        <div className="py-3">
-          <ScrollLink
-            to="home"
-            activeClass="navlink-active"
-            spy={true}
-            smooth={true}
-            onClick={toggleOpen}
-            className="cursor-pointer underline-effect"
-          >
+        {location.pathname === HOME ? (
+          <>
+            <CustomNavlink to="home">Home</CustomNavlink>
+            <CustomNavlink to="feature">Features</CustomNavlink>
+            <CustomNavlink to="review">Reviews</CustomNavlink>
+            <CustomNavlink to="support">Support</CustomNavlink>
+            <CustomNavlink to="contact">Contact</CustomNavlink>
+          </>
+        ) : (
+          <CustomNavlink to={HOME} link>
             Home
-          </ScrollLink>
-        </div>
-        <div className="py-3">
-          <ScrollLink
-            to="feature"
-            activeClass="navlink-active"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            onClick={toggleOpen}
-            className="cursor-pointer underline-effect"
-          >
-            Features
-          </ScrollLink>
-        </div>
-        <div className="py-3">
-          <ScrollLink
-            to="screenshot"
-            activeClass="navlink-active"
-            spy={true}
-            smooth={true}
-            onClick={toggleOpen}
-            offset={-80}
-            className="cursor-pointer underline-effect"
-          >
-            Screenshot
-          </ScrollLink>
-        </div>
-        <div className="py-3">
-          <ScrollLink
-            to="support"
-            activeClass="navlink-active"
-            spy={true}
-            smooth={true}
-            onClick={toggleOpen}
-            offset={-80}
-            className="cursor-pointer underline-effect"
-          >
-            Support
-          </ScrollLink>
-        </div>
-        <div className="py-3">
-          <ScrollLink
-            to="contact"
-            activeClass="navlink-active"
-            spy={true}
-            smooth={true}
-            onClick={toggleOpen}
-            offset={-80}
-            className="cursor-pointer underline-effect"
-          >
-            Contact
-          </ScrollLink>
-        </div>
+          </CustomNavlink>
+        )}
       </nav>
+    </div>
+  );
+}
+
+function CustomNavlink(props) {
+  return (
+    <div className="py-3">
+      {!props.link ? (
+        <ScrollLink
+          to={props.to}
+          activeClass="navlink-active"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
+        >
+          {props.children}
+        </ScrollLink>
+      ) : (
+        <Link
+          to={props.to}
+          className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
+        >
+          {props.children}
+        </Link>
+      )}
     </div>
   );
 }

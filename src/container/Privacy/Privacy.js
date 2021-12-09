@@ -4,10 +4,10 @@ function Privacy() {
   return (
     <>
       <div className="max-w-screen-lg mx-auto px-10 my-16 text-gray-600  text-md flex flex-col gap-y-4">
-        <p className="font-bold text-2xl tracking-wide text-gray-800">
+        <div className="font-bold text-2xl tracking-wide text-gray-800">
           Capitol Tech Privacy Policy
-        </p>
-        <p>
+        </div>
+        <div>
           This Privacy Policy explains to you how your personal data is
           processed when you use the Capitol Tech website's offers and online
           services on the "<span className="font-medium">Capitol Tech</span>"
@@ -17,22 +17,24 @@ function Privacy() {
           website, the mobile app and the widget). This Privacy Policy also
           informs you of your rights and choices to control your personal
           information and to protect your privacy.
-        </p>
-        <p className="highlight-lg ">
+        </div>
+        <div className="highlight-lg ">
           1. Who is responsible for data processing and whom can I contact?
-        </p>
-        <p className="">
+        </div>
+        <div className="">
           Responsible for data processing: 340 Tampines Street 33 #08-242 ,
           520340 , Singapore. This company is also meant if the terms "we" or
           "us" are used below.
           <br /> You can contact our Data Protection Officer at:
-          <div className="text-primary-red mt-1">support@eatsezy.com</div>
-        </p>
-        <p className="highlight-lg">
+          <div className="text-primary-red mt-1">
+            <a href="mailto: support@eatsezy.com">support@eatsezy.com</a>
+          </div>
+        </div>
+        <div className="highlight-lg">
           2. What personal data do we process and from which sources does such
           data originate?
-        </p>
-        <p>
+        </div>
+        <div>
           When we make our platform available to you for use, we process
           personal data from various sources. On the one hand, this is data that
           we automatically collect when you use the platform. However, this may
@@ -68,22 +70,22 @@ function Privacy() {
             </li>
             <li></li>
           </ul>
-        </p>
-        <p>
+        </div>
+        <div>
           We process access data so that you and other users can use the
           platform and we can ensure the functionality of the platform. We also
           process access data to carry out performance analyses on the platform,
           continuously improve the platform and correct errors to ensure IT
           security and the operation of our systems and to prevent or detect
           misuse, particularly fraud.
-        </p>
-        <p>
+        </div>
+        <div>
           In addition, we process to access data to adapt the platform to your
           needs (personalization). To this end, we also assign you what is known
           as a "<span className="highlight">Unique User ID</span>". With this
           unique user ID, we can associate your bookings and other interactions.
-        </p>
-        <p>
+        </div>
+        <div>
           We also use cookies to process such data. Cookies are small text files
           that you download to your device when you visit our websites and that
           store the above information about you. To learn more about how cookies
@@ -92,14 +94,14 @@ function Privacy() {
           tracking tools from third parties such as Google and Facebook. To
           ensure the legibility of this privacy statement, we have summarised
           this information on a separate page.
-          <p className="highlight my-2">
+          <div className="highlight my-2">
             Data that you transmit to us yourself
-          </p>
+          </div>
           In addition to the data we receive from all visitors, we also process
           other data. The exact volume of such data depends on how you use the
           platform. You can use the platform with or without creating a user
           account.
-          <p className="highlight my-3"> Account data</p>
+          <div className="highlight my-3"> Account data</div>
           If you decide to create a user account and complete the registration
           form, we will process the following information:
           <ul className="highlight flex flex-col gap-y-1 mt-2 pl-4">
@@ -109,7 +111,7 @@ function Privacy() {
             <li>* Telephone number </li>
             <li>* Birthdate (optional)</li>
           </ul>
-          <p className="highlight my-3"> Booking and reservation data</p>
+          <div className="highlight my-3"> Booking and reservation data</div>
           When you book or reserve, we also process your:
           <ul className="highlight flex flex-col gap-y-1 my-2 pl-4">
             <li>* Name and surname </li>
@@ -125,7 +127,7 @@ function Privacy() {
           such data in order to be able to handle your reservation, inform you
           about the status of your reservation, and customise the platform based
           on your previous reservations and bookings.
-          <p className="highlight my-3">Evaluations and reviews</p>
+          <div className="highlight my-3">Evaluations and reviews</div>
           The platform offers you the possibility to use certain social
           functions: You can leave ratings and reviews for restaurants. You can
           also subscribe to comments and reviews from other users. When you use
@@ -141,14 +143,14 @@ function Privacy() {
           owner of the email address you entered. Subscriptions for comments can
           be deleted at any time. The confirmation e-mail contains the
           corresponding instructions.
-          <p className="highlight my-3"> Loyalty points</p>
+          <div className="highlight my-3"> Loyalty points</div>
           You receive Loyalty Points for each successful reservation. In order
           to manage these Loyalty Points, we process your reservation data and
           booking history. When redeeming your Loyalty Points, we additionally
           ask you to provide us with your bank details in order to initiate the
           payout. After the bank transfer is complete, we delete your bank
           details.
-          <p className="highlight my-3">Payment details</p>
+          <div className="highlight my-3">Payment details</div>
           We do not process any sensitive details about card payments ourselves,
           but use secure payment providers who do this for us. The payment data
           you enter is encrypted in your browser by the payment provider in a
@@ -156,7 +158,10 @@ function Privacy() {
           non-sensitive data (payment method) and references that confirm that
           you have made a payment. We do not store any other payment information
           in our system.
-          <p className="highlight my-3"> Newsletters and promotional e-mails</p>
+          <div className="highlight my-3">
+            {" "}
+            Newsletters and promotional e-mails
+          </div>
           If you wish to receive our newsletter, we need your consent for this.
           We use the so-called double opt-in process for our newsletter, so that
           you are only subscribed to the newsletter once you click on the link
@@ -184,14 +189,14 @@ function Privacy() {
           transmission costs in accordance with the basic tariffs. Just click on
           the unsubscribe link at the end of each newsletter or send an email to
           the address set out above.
-          <p className="highlight my-3"> Customer support requests</p>
+          <div className="highlight my-3"> Customer support requests</div>
           Perhaps you would like to ask our customer service for assistance or
           make a complaint. In this case, we will process your IP address and
           contact information as well as the content of your request in order to
           respond to your request.
-          <p className="highlight my-3">
+          <div className="highlight my-3">
             Data we receive from partners and third-party platforms
-          </p>
+          </div>
           Since our platform serves as an intermediary between you and the
           restaurant where you make your reservation, we also process data that
           we receive from our partner restaurants. Similarly, we may receive
@@ -205,7 +210,7 @@ function Privacy() {
             <li>* number of guests </li>
             <li>* special preferences</li>
           </ul>
-          <p className="highlight my-3">Other data collected</p>
+          <div className="highlight my-3">Other data collected</div>
           We maintain what is referred to as a fan page on the Facebook
           platform. When you visit our fan page, data may be collected for
           market research and advertising purposes, which are stored in user
@@ -215,7 +220,7 @@ function Privacy() {
           further information on the legal foundations, see below). Data
           processing is carried out on the basis of an agreement between jointly
           responsible parties, which you can view here:
-          <p className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
+          <div className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
             <a
               href="https://www.facebook.com/legal/terms/page_controller_addendum"
               rel="noreferrer"
@@ -223,10 +228,10 @@ function Privacy() {
             >
               https://www.facebook.com/legal/terms/page_controller_addendum
             </a>
-          </p>
+          </div>
           You can find detailed information about data processing by Facebook,
           contact options and your rights in Facebook's privacy policy:
-          <p className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
+          <div className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
             <a
               href="https://www.facebook.com/about/privacy/"
               rel="noreferrer"
@@ -234,14 +239,14 @@ function Privacy() {
             >
               https://www.facebook.com/about/privacy/
             </a>
-          </p>
+          </div>
           , where you can also exercise your right of appeal.
           <br />
           Furthermore, we use Google Maps in order to show you the location of
           our partner restaurants on the map. Google collects your IP-address to
           this end. You can find the terms of use and the respective Google
           privacy policy here:{" "}
-          <p className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
+          <div className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
             <a
               href="https://maps.google.com/help/terms_maps.html"
               rel="noreferrer"
@@ -249,17 +254,17 @@ function Privacy() {
             >
               https://maps.google.com/help/terms_maps.html
             </a>
-          </p>
+          </div>
           We also use Google Tag Manager that allows us to manage tools which
           are implemented via Google Tag Manager. Google Tag Manager itself does
           not set any cookies and does not collect any personal information.
           However, the tool is used to trigger other tags, which might collect
           data.
-        </p>
-        <p className="highlight-lg">
+        </div>
+        <div className="highlight-lg">
           3. For what other purposes do we process your data?
-        </p>
-        <p>
+        </div>
+        <div>
           We possibly process your data for additional purposes. These include
           the following:
           <ul className="highlight flex flex-col gap-y-1 my-2">
@@ -273,18 +278,18 @@ function Privacy() {
               legislation, etc.
             </li>
           </ul>
-        </p>
-        <p className="highlight-lg">
+        </div>
+        <div className="highlight-lg">
           4. What is the legal basis of data processing?
-        </p>
-        <p>
+        </div>
+        <div>
           When processing your personal data, we rely on local data protection
           law and use your personal data only for the fulfilment of our
           services.
           <br />
           In this context, we refer in detail to the following legal
           foundations:
-          <p className="highlight my-3">Consent</p>
+          <div className="highlight my-3">Consent</div>
           Since you have given us your consent to process personal data for the
           above-mentioned purposes, such consent guarantees the lawfulness of
           such processing. By registering with your account information or
@@ -294,9 +299,9 @@ function Privacy() {
           data, this is because you have expressly permitted and requested us to
           do so when you use our platform. Your consent thus represents the most
           important legal basis for the processing of your personal data by us.
-          <p className="highlight my-3">
+          <div className="highlight my-3">
             Fulfilment of our contractual obligations towards you
-          </p>
+          </div>
           At the same time, the processing serves to make the platform available
           within the scope of performance under our contract with you.
           Accordingly, in most cases the processing is justified not only with
@@ -304,7 +309,7 @@ function Privacy() {
           with you. For example, if you make a reservation at a restaurant via
           our platform, we need to process the reservation data to secure your
           reservation.
-          <p className="highlight my-3">Our legitimate interests</p>
+          <div className="highlight my-3">Our legitimate interests</div>
           There are also cases in which we would be entitled to process your
           data without your consent if this is necessary to protect our
           legitimate interests (or those of third parties). In this respect, the
@@ -315,13 +320,12 @@ function Privacy() {
           processing. This also refers to the prevention of abuse of our
           platform or the personalisation of advertising for your interests
           (referred to as direct marketing).
-          <p className="highlight my-3">Statutory requirements</p>
+          <div className="highlight my-3">Statutory requirements</div>
           In addition, we are required by law to provide certain information to
-          the law enforcement or tax authorities upon request in individual
-          cases.
-        </p>
-        <p className="highlight-lg">5. To whom do we transmit your data?</p>
-        <p>
+          the law enforcement or tax authorities upon request in inpidual cases.
+        </div>
+        <div className="highlight-lg">5. To whom do we transmit your data?</div>
+        <div>
           We treat your personal data with care and confidentiality and pass
           such data on to third parties only to the extent described below and
           no further. We only transmit data to public authorities if there is a
@@ -332,7 +336,7 @@ function Privacy() {
           your information with other users of the platform, with our
           third-party providers who assist us in providing the platform, or
           within the Capitol Tech Group of Companies.
-          <p className="highlight my-3">Other users of the platform</p>
+          <div className="highlight my-3">Other users of the platform</div>
           We transfer the booking and reservation data via the platform to our
           partner restaurants to enable reservations to be made at their
           restaurants. We also share your loyalty points with the restaurants to
@@ -342,7 +346,7 @@ function Privacy() {
           also be published on the platform so that they can be seen by all
           remaining users (including visitors without an account on the
           platform).
-          <p className="highlight my-3">Other third parties</p>
+          <div className="highlight my-3">Other third parties</div>
           In addition, we transmit data to external service providers who enable
           us to provide the platform. This includes the data and providers
           listed in our cookie policy. Please note in this connection that all
@@ -351,9 +355,9 @@ function Privacy() {
           providers process all data on our behalf and we have subjected them to
           a strict data processing agreement to ensure the security of the
           processing.
-        </p>
-        <p className="highlight-lg">6. How long will my data be stored?</p>
-        <p>
+        </div>
+        <div className="highlight-lg">6. How long will my data be stored?</div>
+        <div>
           We process and store your personal data as long as this is necessary
           for compliance with our contractual or statutory obligations. We
           therefore store the data as long as our contractual relationship with
@@ -364,11 +368,11 @@ function Privacy() {
           in question will be deleted regularly unless further processing
           thereof is necessary for the preservation of evidence or for legal
           claims subject to the statute of limitations.
-        </p>
-        <p className="highlight-lg">
+        </div>
+        <div className="highlight-lg">
           7. Does Capitol Tech create a user profile with my personal data?
-        </p>
-        <p>
+        </div>
+        <div>
           We use your data to optimise your Capitol Tech browser experience.
           This means that we use your data to provide you with a personalised
           platform based on your personal preferences and interests and to
@@ -381,12 +385,12 @@ function Privacy() {
           data in the course of profiling in such a way that this leads to an
           automated decision that is legally valid for you or that significantly
           affects you in a similar manner.
-        </p>
-        <p className="highlight-lg">
+        </div>
+        <div className="highlight-lg">
           8. Do I have to provide data? What happens if I do not provide my data
           or no longer provide it?
-        </p>
-        <p>
+        </div>
+        <div>
           You are not legally obliged to provide us with the personal data
           specified in this Privacy Policy. In particular, the contractual
           relationship that you have entered with us by agreeing to our terms
@@ -396,13 +400,13 @@ function Privacy() {
           contract with us. Moreover, you may not use the platform or may use it
           only to a limited extent if you do not provide us with certain data or
           if you object to the use of such data.
-        </p>
-        <p className="font-bold text-xl text-primary-red">January 2021</p>
-        <p className="highlight-lg">Capitol Tech Cookie Policy</p>
-        <p>
-          <p className="mb-3 highlight">
+        </div>
+        <div className="font-bold text-xl text-primary-red">January 2021</div>
+        <div className="highlight-lg">Capitol Tech Cookie Policy</div>
+        <div>
+          <div className="mb-3 highlight">
             Cookies and other tools on the Capitol Tech platform
-          </p>
+          </div>
           This information complements the Capitol Tech Privacy Policy.
           <br />
           Below, we provide you with a list of all the cookies and other web
@@ -446,15 +450,15 @@ function Privacy() {
           so that no cookies are accepted at all. However, if you configure this
           setting in this way, you may not be able to use certain current or
           future elements of our website.
-        </p>
-        <p>
+        </div>
+        <div>
           1. Cookies and plugins provided by third parties (referred to as
           "third-party cookies")
-        </p>
-        <p>
+        </div>
+        <div>
           Furthermore, we also use the following cookies and tools from
           third-party providers:
-          <p className="mb-3 highlight">Google Analytics</p>
+          <div className="mb-3 highlight">Google Analytics</div>
           Our platform uses the web analysis service Google Analytics, from
           Google LLC, 1600 Amphitheatre Parkway Mountain View, California 94043,
           USA, for the purpose of analysing and continuously optimising our
@@ -479,7 +483,7 @@ function Privacy() {
           (including your IP address) being collected by Google and being
           processed by Google by downloading and installing the browser plug-in
           available at the following link:
-          <p className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
+          <div className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
             <a
               href="https://tools.google.com/dlpage/gaoptout"
               rel="noreferrer"
@@ -487,7 +491,7 @@ function Privacy() {
             >
               https://tools.google.com/dlpage/gaoptout
             </a>
-          </p>
+          </div>
           Further information on conditions of use and data protection can be
           found at{" "}
           <span className="highlight-accent my-2 text-sm hover:underline cursor-pointer">
@@ -510,9 +514,9 @@ function Privacy() {
             </a>
           </span>
           .
-        </p>
-        <p className="highlight">Google Ads and Google Remarketing</p>
-        <p>
+        </div>
+        <div className="highlight">Google Ads and Google Remarketing</div>
+        <div>
           With Google Ads and Google Remarketing, users who have already visited
           our platform and are interested in the relevant offer can be addressed
           again by targeted advertising on the pages of the Google partner
@@ -536,9 +540,9 @@ function Privacy() {
           such purposes at https://adssettings.google.com/authenticated. Both
           services are subject to the Google Privacy Policy available for
           download at https://policies.google.com/privacy?hl=en-US.
-        </p>
-        <p className="highlight">Facebook retargeting</p>
-        <p>
+        </div>
+        <div className="highlight">Facebook retargeting</div>
+        <div>
           We cooperate with Facebook Inc., 1601 South California Avenue, Palo
           Alto, California 94304, USA, in order to address users again on
           Facebook. For this purpose, we have integrated Facebook Pixel into our
@@ -559,8 +563,8 @@ function Privacy() {
           https://www.facebook.com/ads/website_custom_audiences/. Firebase
           Analytics
           <br />
-        </p>
-        <p></p>
+        </div>
+        <div></div>
       </div>
     </>
   );

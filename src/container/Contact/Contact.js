@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { GrMapLocation } from "react-icons/gr";
-import { BsClock } from "react-icons/bs";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { AiOutlineMobile } from "react-icons/ai";
 
@@ -26,12 +25,8 @@ function Contact() {
           <h1 className="section-title-font-size font-semibold py-3 text-center">
             Get in Touch
           </h1>
-          <div className="card-section-small mx-20 text-gray-500 text-center">
-            Nullam hendrerit massa quis dui egestas, id scelerisque felis
-            rutrum. Etiam sem nibh, auctor sed, pharetra congue.
-          </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row">
+        <div className="w-full flex flex-col gap-y-8 md:gap-y-0 md:flex-row">
           <div className="flex flex-col md:w-1/3">
             <div className="text-center md:text-left">
               <div className="contact-title my-3 text-center flex flex-nowrap justify-center items-center md:justify-start">
@@ -40,9 +35,8 @@ function Contact() {
                 </div>
                 <p className=" font-bold text-lg"> Office Location</p>
               </div>
-              <p className="text-gray-400 "> 132 Dartmouth Street</p>
-              <p className="text-gray-400 "> Boston, Massachusetts 02156</p>
-              <p className="text-gray-400 "> United States</p>
+              <p className="text-gray-400 "> 16 Bussorah St</p>
+              <p className="text-gray-400 ">Singapore 199437</p>
             </div>
             <div className="text-center md:text-left">
               <div className="contact-title my-3 text-center flex flex-nowrap justify-center items-center md:justify-start">
@@ -53,7 +47,7 @@ function Contact() {
               </div>
               <p className=" cursor-pointer text-card-red hover:text-black ">
                 {" "}
-                +1 617 572 3012
+                +65 8100 0443
               </p>
             </div>
             <div className="text-center md:text-left">
@@ -63,18 +57,12 @@ function Contact() {
                 </div>
                 <p className=" font-bold text-lg"> Email Address</p>
               </div>
-              <p className="cursor-pointer text-card-red hover:text-black">
-                email@sitename.com
-              </p>
-            </div>
-            <div className="text-center md:text-left">
-              <div className="contact-title my-3 text-center flex flex-nowrap justify-center items-center md:justify-start">
-                <div className="text-card-red mr-2">
-                  <BsClock size={18} />
-                </div>
-                <p className=" font-bold text-lg">Working Address</p>
-              </div>
-              <p className="text-gray-400 ">09:00AM to 06:00PM</p>
+              <a
+                href="mailto:info@eatsezy.com"
+                className="cursor-pointer text-card-red hover:text-black"
+              >
+                info@eatsezy.com
+              </a>
             </div>
           </div>
           <div className="p-8 flex-grow bg-gray-100 rounded-lg md:w-2/3">

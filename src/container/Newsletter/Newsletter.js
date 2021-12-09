@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import horizontalmobile from "../../static/horizontalmobile.png";
+import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 import mailbox from "../../static/mailbox.jpg";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
+import { PRIVACY } from "../../routes.constant";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
@@ -22,12 +24,9 @@ function Newsletter() {
           <div className="relative flex justify-center items-center px-10">
             <div className="absolute h-1/2 top-0 left-0 right-0 bg-white"></div>
             <div className="relative max-w-screen-sm mx-auto">
-              <AnimationOnScroll
-                animateOnce={true}
-                animateIn="animate__fadeInUp"
-              >
+              <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp">
                 <img src={horizontalmobile} alt="mobile" />
-              </AnimationOnScroll>
+              </ScrollAnimation>
             </div>
           </div>
           <div className="relative max-w-screen-sm mx-auto mb-12 text-white">
@@ -37,8 +36,9 @@ function Newsletter() {
                   Subscribe To Newsletter
                 </h1>
                 <div className="screenshot-small  text-center">
-                  Vivamus ornare feugiat orci eu faucibus. Phasellus nulla arcu,
-                  pharetra nec laoreet in, scelerisque a lectus.
+                  Do not miss on important updates. Share your email below so we
+                  can keep you posted on the latest updates and ongoing
+                  promotion offers
                 </div>
               </div>
               <form onSubmit={handleSubmit}>
@@ -61,8 +61,10 @@ function Newsletter() {
               <div className="text-sm mt-6 lg:mt-10 mx-4 font-semibold text-white text-center">
                 We don’t share your personal information with anyone or company.
                 Check out our{" "}
-                <span className="text-card-red">Privacy Policy</span> for more
-                information.
+                <Link to={PRIVACY}>
+                  <span className="text-card-red">Privacy Policy</span>
+                </Link>{" "}
+                for more information.
               </div>
             </div>
           </div>

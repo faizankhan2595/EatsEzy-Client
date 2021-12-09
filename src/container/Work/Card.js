@@ -10,9 +10,6 @@ function Card(props) {
       </div>
       <div className="card-title text-center">
         <div className=" text-2xl font-bold text-center">{props.title}</div>
-        <div className=" text-md font-medium text-gray-500 text-center mt-1 group-hover:text-white">
-          {props?.subtitle}
-        </div>
       </div>
       <div className="card-detail px-6 text-md text-gray-500 text-center group-hover:text-white">
         {props.detail}

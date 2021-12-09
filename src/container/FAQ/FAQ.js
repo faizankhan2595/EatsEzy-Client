@@ -18,24 +18,25 @@ function FAQ() {
       </div>
       <div className="flex flex-col w-full ">
         <Accordian
-          title="Can I see Naxos in action before purchasing it?"
-          details="Nam erat orci, dictum eu iaculis a, scelerisque commodo risus. Mauris eu egestas ipsum. In hac habitasse platea dictumst. Duis in consequat est. Sed feugiat, ante in finibus ullamcorper, felis sem porta orci, sed pretium nibh nunc a tellus."
+          title="Can I pay monthly?"
+          details="Yes we provide a flexible and tailored solution as per your business needs"
         />
         <Accordian
-          title="I’ve got older Mac. Is Naxos compatible with it?"
-          details="Nam erat orci, dictum eu iaculis a, scelerisque commodo risus. Mauris eu egestas ipsum. In hac habitasse platea dictumst. Duis in consequat est. Sed feugiat, ante in finibus ullamcorper, felis sem porta orci, sed pretium nibh nunc a tellus."
+          title="Is there a maximum cap on the number of bookings I can take on the app?"
+          details="No. There is no cap. In fact, we want your bookings to grow every day and we will help you do everything possible for that.
+"
         />
         <Accordian
-          title="What are the requirements for using Naxos?"
-          details="Nam erat orci, dictum eu iaculis a, scelerisque commodo risus. Mauris eu egestas ipsum. In hac habitasse platea dictumst. Duis in consequat est. Sed feugiat, ante in finibus ullamcorper, felis sem porta orci, sed pretium nibh nunc a tellus."
+          title="What if I want to move out in future?"
+          details="Sure. We guarantee that you will not want to move out but if you ever feel so we will help you with a smooth exit. We are customer first company.  "
         />
         <Accordian
-          title="How does Naxos handle my privacy?"
-          details="Nam erat orci, dictum eu iaculis a, scelerisque commodo risus. Mauris eu egestas ipsum. In hac habitasse platea dictumst. Duis in consequat est. Sed feugiat, ante in finibus ullamcorper, felis sem porta orci, sed pretium nibh nunc a tellus."
+          title="Is there local support if I am not sure how to use the app?"
+          details="We are a local company. Founded by the restaurant owner. We understand the complexities of using a new system within the team and we will provide on-demand support for free."
         />
         <Accordian
-          title="What is Naxos privacy policy?"
-          details="Nam erat orci, dictum eu iaculis a, scelerisque commodo risus. Mauris eu egestas ipsum. In hac habitasse platea dictumst. Duis in consequat est. Sed feugiat, ante in finibus ullamcorper, felis sem porta orci, sed pretium nibh nunc a tellus."
+          title="Can i try it for free?"
+          details="Sure. Reach out to us for a 14 day free trial plan."
         />
       </div>
       <div className="py-5 text-sm font-semibold">

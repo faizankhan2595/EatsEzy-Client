@@ -1,9 +1,11 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../static/textlogored.svg";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { HOME } from "./../../routes.constant";
 
 function NavDropdown({ toggleOpen }) {
+  const location = useLocation();
   return (
     <>
       <div className=" w-full bg-white">
@@ -37,69 +39,50 @@ function NavDropdown({ toggleOpen }) {
               </button>
             </div>
             <nav className="text-gray-900 text-opacity-90 font-medium tracking-wide flex-grow hidden pb-4 md:pb-0 md:flex md:flex-nowrap md:justify-end md:items-center md:flex-row lg:px-2">
-              <div className="px-4 lg:px-8 py-2">
-                <ScrollLink
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
-                >
+              {location.pathname === HOME ? (
+                <>
+                  <CustomNavlink to="home">Home</CustomNavlink>
+                  <CustomNavlink to="feature">Features</CustomNavlink>
+                  <CustomNavlink to="review">Reviews</CustomNavlink>
+                  <CustomNavlink to="support">Support</CustomNavlink>
+                  <CustomNavlink to="contact">Contact</CustomNavlink>
+                </>
+              ) : (
+                <CustomNavlink to={HOME} link>
                   Home
-                </ScrollLink>
-              </div>
-              <div className="px-4 lg:px-8 py-2">
-                <ScrollLink
-                  to="feature"
-                  activeClass="navlink-active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
-                >
-                  Features
-                </ScrollLink>
-              </div>
-              <div className="px-4 lg:px-8 py-2">
-                <ScrollLink
-                  to="screenshot"
-                  activeClass="navlink-active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
-                >
-                  Screenshot
-                </ScrollLink>
-              </div>
-              <div className="px-4 lg:px-8 py-2">
-                <ScrollLink
-                  to="support"
-                  activeClass="navlink-active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  className="cursor-pointer underline-effect light-nav transition duration-300 transform hover:text-primary-red"
-                >
-                  Support
-                </ScrollLink>
-              </div>
-              <div className="px-4 lg:px-8 py-2">
-                <ScrollLink
-                  to="contact"
-                  activeClass="navlink-active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
-                >
-                  Contact
-                </ScrollLink>
-              </div>
+                </CustomNavlink>
+              )}
             </nav>
           </div>
         </div>
       </div>
     </>
+  );
+}
+
+function CustomNavlink(props) {
+  return (
+    <div className="px-4 lg:px-8 py-2">
+      {!props.link ? (
+        <ScrollLink
+          to={props.to}
+          activeClass="navlink-active"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
+        >
+          {props.children}
+        </ScrollLink>
+      ) : (
+        <Link
+          to={props.to}
+          className="cursor-pointer leading-3 underline-effect light-nav transition duration-300 transform hover:text-primary-red"
+        >
+          {props.children}
+        </Link>
+      )}
+    </div>
   );
 }
 

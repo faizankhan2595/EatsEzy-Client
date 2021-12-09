@@ -3,7 +3,7 @@ import Card from "./Card";
 import { FiDatabase } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { RiPenNibLine } from "react-icons/ri";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Work() {
   return (
@@ -18,38 +18,35 @@ function Work() {
         </div>
       </div>
       <div className="card-list my-12 max-w-6xl gap-10 grid grid-cols-1 justify-items-stretch items-stretch lg:grid-cols-3">
-        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+        <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp">
           <Card
             icon={FiDatabase}
-            title="Your Data in Cloud"
-            subtitle="Centralised bookings"
+            title="Centralised bookings"
             detail="Get all your bookings in once place, from EatsEzy guest app, walking, website or infact on call bookings. Leverage the power of cloud with the platform."
           />
-        </AnimationOnScroll>
-        <AnimationOnScroll
+        </ScrollAnimation>
+        <ScrollAnimation
           delay={300}
           animateOnce={true}
           animateIn="animate__fadeInUp"
         >
           <Card
             icon={BiSupport}
-            title="24/7 Support"
-            subtitle="Local Support"
+            title="Local Support"
             detail="Facing a problem? Give us a call. We are a local company and we will be always there to help our partners."
           />
-        </AnimationOnScroll>
-        <AnimationOnScroll
+        </ScrollAnimation>
+        <ScrollAnimation
           delay={600}
           animateOnce={true}
           animateIn="animate__fadeInUp"
         >
           <Card
             icon={RiPenNibLine}
-            title="Exclusive Design"
-            subtitle="Easy to use"
+            title="Easy to use"
             detail="The UX has been planned to make it super easy for restaurant partners to easily operate the app and experience the digital transformation of their business."
           />
-        </AnimationOnScroll>
+        </ScrollAnimation>
       </div>
     </div>
   );

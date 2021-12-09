@@ -9,15 +9,17 @@ import TimeSchedule from "../container/TimeSchedule/TimeSchedule";
 import Newsletter from "../container/Newsletter/Newsletter";
 import FAQ from "../container/FAQ/FAQ";
 import Contact from "../container/Contact/Contact";
-import AppScreenShots from "../container/AppScreenShots/AppScreenShots";
+// import AppScreenShots from "../container/AppScreenShots/AppScreenShots";
 import NavDropdown from "../container/Nav/NavDropdown";
 import { useWindowPosition } from "../utils";
 
 function HomePage({ open, toggleOpen }) {
   const showNav = useWindowPosition() >= 100;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
       <div className="relative bg-white">
@@ -40,9 +42,9 @@ function HomePage({ open, toggleOpen }) {
           <TimeSchedule />
           <ClientReview />
         </div>
-        <div id="screenshot">
+        {/* <div id="screenshot">
           <AppScreenShots />
-        </div>
+        </div> */}
         <div id="support">
           <FAQ />
           <Newsletter />

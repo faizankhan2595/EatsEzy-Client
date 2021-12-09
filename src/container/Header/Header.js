@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
 import Nav from "../Nav/Nav";
 import oval from "../../static/base.png";
 import phone from "../../static/phone.png";
@@ -15,12 +15,12 @@ function Header({ toggleOpen }) {
         <div className="relative bg-filter-red bg-opacity-90">
           <Nav toggleOpen={toggleOpen} />
           <div className="flex flex-col justify-center items-center p-5 text-white text-center">
-            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+            <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp">
               <p className="header-large font-semibold p-5">
                 Getting more diners is Easy
               </p>
-            </AnimationOnScroll>
-            <AnimationOnScroll
+            </ScrollAnimation>
+            <ScrollAnimation
               animateOnce={true}
               delay={500}
               animateIn="animate__fadeInUp"
@@ -30,9 +30,9 @@ function Header({ toggleOpen }) {
                 You are at the right place. Your passion to serve with our
                 expertise to help you grow = EatsEzy.
               </p>
-            </AnimationOnScroll>
+            </ScrollAnimation>
           </div>
-          <AnimationOnScroll
+          <ScrollAnimation
             animateOnce={true}
             delay={800}
             animateIn="animate__fadeInUp"
@@ -42,15 +42,15 @@ function Header({ toggleOpen }) {
                 Enquire now
               </button>
             </div>
-          </AnimationOnScroll>
+          </ScrollAnimation>
           <div className="flex justify-center mt-8">
-            <AnimationOnScroll
+            <ScrollAnimation
               animateOnce={true}
               delay={500}
               animateIn="animate__fadeInUp"
             >
               <img src={phone} alt="landing-phone" />
-            </AnimationOnScroll>
+            </ScrollAnimation>
           </div>
         </div>
         <div className="absolute bottom-0">
