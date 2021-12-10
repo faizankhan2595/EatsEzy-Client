@@ -1,6 +1,6 @@
 import React from "react";
-import phone from "../../static/phone.png";
-import dualphone from "../../static/dualphone.png";
+import growImg1 from "../../static/time_image.png";
+import growImg2 from "../../static/header_image.png";
 import { FiCompass } from "react-icons/fi";
 import ScheduleItem from "./ScheduleItem";
 import ListItem from "./ListItem";
@@ -9,8 +9,8 @@ function TimeSchedule() {
   return (
     <div className=" p-10 bg-gray-50 md:py-16">
       <div className="flex flex-col justify-evenly mx-auto md:flex-row">
-        <div className="time-img md:px-6 lg:px-6 flex justify-center items-center md:w-5/12">
-          <img src={dualphone} alt="dual-phone" />
+        <div className="md:px-6 lg:px-8 flex justify-center items-center md:w-5/12">
+          <img src={growImg1} alt="dual-phone" />
         </div>
         <div className=" my-10 mx-auto flex flex-col max-w-screen-sm item-start justify-center lg:mr-auto md:self-stretch md:w-7/12">
           <div className="time-header mb-3 section-title-font-size font-semibold text-center md:text-left">
@@ -70,8 +70,8 @@ function TimeSchedule() {
             </button>
           </div>
         </div>
-        <div className="time-img md:px-8 lg:px-12 flex justify-center items-center md:w-5/12">
-          <img src={phone} alt="phone" />
+        <div className="time-img md:px-8  flex justify-center items-center md:w-5/12">
+          <img src={growImg2} alt="phone" />
         </div>
       </div>
     </div>

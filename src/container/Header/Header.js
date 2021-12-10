@@ -2,7 +2,8 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Nav from "../Nav/Nav";
 import oval from "../../static/base.png";
-import phone from "../../static/phone.png";
+// import phone from "../../static/phone.png";
+import headerImg from "../../static/header_image.png";
 import clip from "../../static/video/bg-video.mp4";
 
 function Header({ toggleOpen }) {
@@ -46,10 +47,12 @@ function Header({ toggleOpen }) {
           <div className="flex justify-center mt-8">
             <ScrollAnimation
               animateOnce={true}
-              delay={500}
+              delay={1000}
               animateIn="animate__fadeInUp"
             >
-              <img src={phone} alt="landing-phone" />
+              <div className="mx-auto mb-8 md:w-4/6">
+                <img src={headerImg} alt="landing-phone" loading="lazy" />
+              </div>
             </ScrollAnimation>
           </div>
         </div>

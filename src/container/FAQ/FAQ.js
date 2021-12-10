@@ -5,16 +5,16 @@ function FAQ() {
   return (
     <div
       id="support"
-      className="question-section max-w-screen-md flex flex-col items-center mx-auto py-10 px-8"
+      className="question-section max-w-screen-md flex flex-col items-center mx-auto py-6 px-8 lg:py-10"
     >
-      <div className=" py-6">
+      <div className=" py-2 lg:py-6">
         <h1 className="section-title-font-size font-semibold py-3 text-center">
           Frequently Asked Questions
         </h1>
-        <div className="card-section-small text-gray-500 text-center">
+        {/* <div className="card-section-small text-gray-500 text-center">
           Cras fringilla, lectus sed ullamcorper fringilla. Massa ex accumsan
           odio, quis iaculis justo magna quis tortor.
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col w-full ">
         <Accordian

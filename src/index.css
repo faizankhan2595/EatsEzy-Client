@@ -22,6 +22,13 @@ html {
 .header {
   max-height: 130vh;
 }
+
+@media (max-width: 968px) {
+  .header {
+    max-height: 140vh;
+  }
+}
+
 .header-large {
   font-size: clamp(36px, 10vw, 50px);
 }
@@ -84,9 +91,9 @@ html {
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding 0.2s;
 }
 
-.slick-list {
+/* .slick-list {
   padding: 0 20% 0 0 !important;
-}
+} */
 
 .underline-effect {
   position: relative;

@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureItem from "./FeatureItem";
-import center from "../../static/center.png";
+import floorImg from "../../static/features_image.png";
 import { FiSettings } from "react-icons/fi";
 import { HiOutlineLockClosed } from "react-icons/hi";
 import { BsChatRightText } from "react-icons/bs";
@@ -42,8 +42,8 @@ function Features() {
           />
         </div>
 
-        <div className="hidden md:block md:w-4/12 md:mx-6">
-          <img src={center} alt="feature-phone" />
+        <div className="hidden md:block md:w-4/12 md:mx-2">
+          <img src={floorImg} alt="feature-phone" />
         </div>
 
         <div className=" h-full md:w-4/12 lg:mr-8 lg:ml-2 flex flex-col justify-evenly">

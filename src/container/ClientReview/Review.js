@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
+
 import { reviews } from "./reviewlist";
 
 const leng = reviews.length;
@@ -8,10 +9,8 @@ const getSlides = () => {
   const width = window.innerWidth;
   if (width <= 480) {
     return 0;
-  } else if (width <= 968) {
-    return 1;
   } else {
-    return 2;
+    return 1;
   }
 };
 
@@ -25,10 +24,8 @@ function Review() {
     const width = window.innerWidth;
     if (width <= 480 && slides !== 0) {
       setSlides(0);
-    } else if (width <= 968 && slides !== 1) {
+    } else {
       setSlides(1);
-    } else if (slides !== 2) {
-      setSlides(2);
     }
   };
 
@@ -45,10 +42,10 @@ function Review() {
   var settings = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     speed: 1000,
     arrows: false,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initial: 0,
     lazyLoad: "progressive",
@@ -102,7 +99,7 @@ function Review() {
           </Slider>
           <div className="w-28 mx-auto my-2 text-center">
             <p className="font-semibold">{currentReview.name}</p>
-            <p className="text-gray-500"> from{" " + currentReview.org}</p>
+            <p className="text-gray-500"> {currentReview.org}</p>
           </div>
         </div>
       </div>
@@ -111,3 +108,77 @@ function Review() {
 }
 
 export default Review;
+
+// function Review() {
+//   const [current, setCurrent] = useState(0);
+//   const handleClick = (idx) => {
+//     setCurrent(idx);
+//   };
+
+//   return (
+//     <>
+//       <div className="max-w-screen-sm mx-auto mt-8">
+//         <div className="text-center text-gray-500">
+//           <div className="quotes md:mx-10 font-medium">
+//             {reviews[current].review}
+//           </div>
+//           <div className="mt-4 md:hidden">
+//             <p className="font-bold text-primary-red">
+//               {reviews[current].name}
+//             </p>
+//             <p className="text-sm font-bold">{reviews[current].org}</p>
+//           </div>
+//         </div>
+//         <div className="mt-8">
+//           <div className="w-full">
+//             <div className="flex flex-col justify-center items-stretch md:flex-row">
+//               <div className="my-3 w-1/2 md:w-5/6 flex-grow flex flex-col justify-evenly">
+//                 <div className="max-w-max mx-auto ring-offset-4 ring-4 ring-opacity-60 ring-primary-red rounded-full overflow-hidden">
+//                   <img
+//                     src={reviews[current].imgsrc}
+//                     alt="profile"
+//                     width={250}
+//                     height={250}
+//                   />
+//                 </div>
+//                 <div className="mt-4 hidden md:block text-center">
+//                   <p className="font-bold text-primary-red">
+//                     {reviews[current].name}
+//                   </p>
+//                   <p className="text-sm font-bold">{reviews[current].org}</p>
+//                 </div>
+//               </div>
+//               <div className="flex justify-around items-center md:flex-col">
+//                 {reviews.map((review, index) => {
+//                   if (index === current) {
+//                     return null;
+//                   }
+//                   return (
+//                     <div
+//                       key={index}
+//                       className="m-3 md:w-1/2 lg:w-1/3 rounded-full overflow-hidden"
+//                       onClick={() => handleClick(index)}
+//                     >
+//                       <img src={review.imgsrc} alt="profile" />
+//                     </div>
+//                   );
+//                 })}
+//               </div>
+//             </div>
+//             {/* <div className="hidden flex-row justify-around items-center md:flex">
+//               {reviews.map((review, index) => (
+//                 <div
+//                   key={index}
+//                   className={`m-5 ring-offset-4 ring-4 ring-opacity-60 ring-primary-red mx-auto rounded-full overflow-hidden`}
+//                   onClick={() => handleClick(index)}
+//                 >
+//                   <img src={review.imgsrc} alt="profile" />
+//                 </div>
+//               ))}
+//             </div> */}
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }

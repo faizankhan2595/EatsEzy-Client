@@ -1,51 +1,35 @@
-import pp1 from "../../static/pp1.jpg";
-import pp2 from "../../static/pp2.jpg";
-import pp3 from "../../static/pp3.jpg";
-import pp4 from "../../static/pp4.jpg";
-import pp5 from "../../static/pp5.jpg";
-import pp6 from "../../static/pp6.jpg";
+import pp1 from "../../static/client_1.jpg";
+import pp2 from "../../static/client_2.jpg";
+import pp3 from "../../static/client_3.jpg";
+import pp4 from "../../static/client_4.png";
 
 export const reviews = [
   {
-    name: "Subhajit",
-    org: "Sprite",
+    name: "Jonathan Lee",
+    org: "Founder",
     imgsrc: pp1,
     review:
-      "1Donec purus est, tinc vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
+      "The solution is in my budget. It is as good as other expensive options in the market.",
   },
   {
-    name: "Subhajit",
-    org: "Sprite",
+    name: "Pebble Chan",
+    org: "Co-Founder",
     imgsrc: pp2,
     review:
-      "2Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
+      "The app is very smooth. I can use it on my handphone also not like other providers restricted to tablet.",
   },
   {
-    name: "Subhajit",
-    org: "Sprite",
+    name: "Ahmed Ali",
+    org: "Head Chef",
     imgsrc: pp3,
     review:
-      "3Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
+      "This gave me up to 30% more revenue every month. I can even block the dates when our Restaurant is undergoing maintenance. ",
   },
   {
-    name: "Subhajit",
-    org: "Sprite",
+    name: "Haikal Khan",
+    org: "Owner",
     imgsrc: pp4,
     review:
-      "4Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
-  },
-  {
-    name: "Subhajit",
-    org: "Sprite",
-    imgsrc: pp5,
-    review:
-      "5Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
-  },
-  {
-    name: "Subhajit",
-    org: "Sprite",
-    imgsrc: pp6,
-    review:
-      "6Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum.",
+      "Very excited to hear their growth plans. Seems like this is the future of restaurant bookings in Singapore.",
   },
 ];

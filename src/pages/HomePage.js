@@ -40,8 +40,8 @@ function HomePage({ open, toggleOpen }) {
           <Features />
           <Work />
           <TimeSchedule />
-          <ClientReview />
         </div>
+        <ClientReview />
         {/* <div id="screenshot">
           <AppScreenShots />
         </div> */}
